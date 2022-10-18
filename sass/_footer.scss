@@ -1,0 +1,145 @@
+footer {
+    background-color: var(--bacground-gray-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.navigation__logo--white {
+    color: var(--primary-white-color);
+}
+
+.adr-list a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--address-color);
+}
+
+footer .fact {
+    color: var(--primary-white-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-footer,
+.phone {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-footer {
+    padding: 60px 0;
+}
+
+.nav-footer {
+    margin-top: 20px;
+}
+
+.footer-email {
+    margin: 9px 0;
+}
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.studio-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--primary-white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio-social-link:hover,
+.studio-social-link:focus {
+    background-color: var(--accent-text-color);
+}
+
+.studio-social-link:hover svg,
+.studio-social-link:focus svg {
+    fill: var(--primary-white-color);
+}
+
+.studio-social {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
+}
+
+.social-contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-social {
+    margin-left: 70px;
+}
+
+.footer-social>p,
+.subscription>p {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+
+.subscription {
+    margin-left: auto;
+}
+
+.subscription form {
+    display: flex;
+}
+
+.subscription input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--bacground-gray-color);
+    padding-left: 16px;
+    outline: none;
+    color: var(--primary-white-color);
+}
+
+
+.subscription button {
+    background-color: var(--accent-text-color);
+    color: var(--primary-white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    margin-left: 12px;
+}
+
+input::placeholder {
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: var(--address-color);
+}
+.icon-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+}

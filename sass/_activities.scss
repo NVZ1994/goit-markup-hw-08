@@ -1,0 +1,38 @@
+.box {
+    position: relative;
+}
+.description {
+    position: absolute;
+    bottom: 0;
+    background: var(--activities-background);
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    width: 100%;
+    padding: 27px 0;
+}
+.section-activities {
+    padding-top: 0;
+}
+
+.activities-container {
+    display: block;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.activities-item {
+    flex-basis: calc((100% - 4 * 30px) / 3);
+}

@@ -433,10 +433,13 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  width: 100%;
   height: 120px;
   border-radius: 4px;
   background-color: var(--secondary-bgr-color);
+}
+.feature-icon .icon {
+  width: 70px;
+  height: 70px;
 }
 @media screen and (min-width: 768px) {
   .feature-icon {

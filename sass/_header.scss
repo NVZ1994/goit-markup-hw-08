@@ -21,6 +21,7 @@
 .navigation__logo--black {
     color: var(--title-text-color);
 }
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -45,7 +46,7 @@
     line-height: 1.14;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
-    display: flex;
+    display: none;
 }
 
 .navigation__list {
@@ -60,7 +61,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    display: flex;
+    display: none;
     margin-left: auto;
 }
 

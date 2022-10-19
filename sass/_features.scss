@@ -1,19 +1,17 @@
 .section__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: block;
     justify-content: center;
-    flex-wrap: nowrap;
 }
 
 .features__list-title {
@@ -30,7 +28,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background-color: var(--secondary-bgr-color);
@@ -38,4 +36,8 @@
 
 .features__descr {
     line-height: 1.7;
+}
+
+.features__list-item {
+    margin-bottom: 30px;
 }

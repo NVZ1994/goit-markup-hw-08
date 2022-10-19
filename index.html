@@ -59,7 +59,7 @@
       <div class="container">
         <h2 class="section__title visually-hidden">Oсобливості</h2>
         <ul class="features__list">
-          <li>
+          <li class="features__list-item">
             <div class="feature-icon">
               <svg class="icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -71,7 +71,7 @@
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="features__list-item">
             <div class="feature-icon">
               <svg class="icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-clock"></use>
@@ -83,7 +83,7 @@
               тягне у себе.
             </p>
           </li>
-          <li>
+          <li class="features__list-item">
             <div class="feature-icon">
               <svg class="icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-diagram"></use>
@@ -139,7 +139,7 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="members-list">
           <li class="member-item">
-            <img src="./images/igor.jpg" alt="product designer photo" width="270" class="person">
+            <img src="./images/igor.jpg" alt="product designer photo"class="person">
             <div>
               <h3 class="title">Ігор Дем'яненко</h3>
               <p class="job">Product Designer</p>
@@ -168,7 +168,7 @@
             </div>
           </li>
           <li class="member-item">
-            <img src="./images/olga.jpg" alt="frontend developer photo" width="270" class="person">
+            <img src="./images/olga.jpg" alt="frontend developer photo" class="person">
             <div>
               <h3 class="title">Ольга Рєпіна</h3>
               <p class="job">Frontend Developer</p>
@@ -197,7 +197,7 @@
             </div>
           </li>
           <li class="member-item">
-            <img src="./images/mykola.jpg" alt="marketing manager photo" width="270" class="person">
+            <img src="./images/mykola.jpg" alt="marketing manager photo" class="person">
             <div>
               <h3 class="title">Микола Тарасов</h3>
               <p class="job">Marketing</p>
@@ -226,7 +226,7 @@
             </div>
           </li>
           <li class="member-item">
-            <img src="./images/mykhailo.jpg" alt="ui designer photo" width="270" class="person">
+            <img src="./images/mykhailo.jpg" alt="ui designer photo" class="person">
             <div>
               <h3 class="title">Михайло Єрмаков</h3>
               <p class="job">UI Designer</p>
@@ -299,9 +299,9 @@
   </main>
   <footer class="section-footer">
     <div class="container footer-container">
-      <div>
-        <a href="./index.html" class="logo">Web<span class="navigation__logo--white">Studio</span></a>
-        <address class="auth-nav-list">
+      <div class="footer-container-item">
+        <a href="./index.html" class="logo footer-logo">Web<span class="navigation__logo--white">Studio</span></a>
+                <address class="auth-nav-list">
           <div class="nav-footer">
             <ul class="adr-list">
               <li>
@@ -317,7 +317,8 @@
             </ul>
           </div>
         </address>
-      </div>
+        </div>
+        <div class="footer-container-item">
       <div class="footer-social">
         <p>приєднуйтесь</p>
         <ul class="social-contacts">
@@ -343,9 +344,11 @@
           </li>
         </ul>
       </div>
+      </div>
+      <div class="footer-container-item">
       <div class="subscription">
         <p>Підпишіться на розсилку</p>
-        <form action="">
+        <form action="" class="subscription__form">
           <input type="email" placeholder="E-mail" required>
           <button type="submit" class="btn subscription-btn">
             Підписатися<svg class="icon-send">
@@ -353,6 +356,7 @@
             </svg>
           </button>
         </form>
+      </div>
       </div>
     </div>
   </footer>

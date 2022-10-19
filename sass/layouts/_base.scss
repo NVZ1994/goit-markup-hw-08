@@ -1,7 +1,7 @@
 img {
-
     display: block;
 }
+
 h1,
 h2,
 h3,
@@ -22,11 +22,11 @@ body {
 }
 
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
 }
 
 .container {
-    width: 1200px;
+    width: 480px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -40,10 +40,12 @@ ul {
     list-style: none;
     padding-left: 0;
 }
+
 .navigation__list-item--current {
     color: var(--accent-text-color);
     position: relative;
 }
+
 .navigation__list-item--current::after {
     content: "";
     width: 100%;

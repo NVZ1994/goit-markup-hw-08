@@ -1,6 +1,6 @@
 .hero {
     background: var(--hero-bacground);
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     max-width: 480px;
     margin-left: auto;
@@ -11,6 +11,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include tablet {
+        padding: 118px 0;
+        max-width: 768px;
+    }
+
+    @include desktop {
+        padding: 200px 0;
+        max-width: 1600px
+    }
 }
 
 .hero__container {
@@ -22,15 +32,23 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
+    width: 360px;
     font-size: 26px;
     line-height: 1.6;
     color: var(--primary-white-color);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.36   ;
+        width: 696px
+    }
 }
 .hero__button {
     margin-top: 30px;
 }
+
 
 

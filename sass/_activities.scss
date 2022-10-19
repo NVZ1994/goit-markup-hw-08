@@ -16,6 +16,10 @@
 .section-activities {
     padding-top: 0;
     display: none;
+
+    @include desktop {
+        display: flex;
+    }
 }
 
 .activities-container {

@@ -12,6 +12,16 @@
 .features__list {
     display: block;
     justify-content: center;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include desktop {
+        display: flex;
+    }
 }
 
 .features__list-title {
@@ -32,6 +42,14 @@
     height: 120px;
     border-radius: 4px;
     background-color: var(--secondary-bgr-color);
+
+    @include tablet {
+        width: 354px;
+    }
+
+    @include desktop {
+     width: 270px;
+    }
 }
 
 .features__descr {
@@ -40,4 +58,12 @@
 
 .features__list-item {
     margin-bottom: 30px;
+
+    @include tablet {
+            width: 354px;
+        }
+    
+        @include desktop {
+            width: 270px;
+        }
 }

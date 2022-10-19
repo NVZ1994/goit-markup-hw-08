@@ -29,6 +29,13 @@ body {
     width: 480px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @include tablet {
+        width: 768px;
+    }
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 a {

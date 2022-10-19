@@ -1,6 +1,14 @@
 .person {
     margin-bottom: 30px;
-    width: 100%;
+    width: 450px;
+
+    @include tablet {
+        width: 354px;
+    }
+
+    @include desktop {
+        width: 270px;
+    }
 }
 .team-section {
     background-color: var(--secondary-bgr-color);

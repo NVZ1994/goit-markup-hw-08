@@ -567,6 +567,24 @@ ul {
   line-height: 1.1875;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .members-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .members-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+  }
+}
 
 .member-item {
   -ms-flex-preferred-size: calc((100% - 150px) / 4);
@@ -580,6 +598,16 @@ ul {
 }
 .member-item:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .member-item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .member-item {
+    margin-bottom: 0;
+  }
 }
 
 .member-social {

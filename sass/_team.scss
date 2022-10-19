@@ -29,6 +29,17 @@
             line-height: 1.1875;
             text-align: center;
         }
+
+    @include tablet {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    @include desktop {
+        display: flex;
+        display: flex;
+    }
 }
 
 .member-item {
@@ -43,6 +54,14 @@
             &:last-child {
                 margin-bottom: 0;
             }
+
+    @include tablet {
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        margin-bottom: 0;
+    }
 }
 
 .member-social {

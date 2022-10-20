@@ -6,6 +6,15 @@ footer {
 .footer-container {
     text-align: center;
 
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: flex;
+        text-align: start;
+        justify-content: space-between;
+    }
     
 }
 
@@ -14,6 +23,9 @@ footer {
 
     &:last-child {
         margin-bottom: 0;
+        @include desktop {
+            margin-left: 70px;
+        }
     }
 }
 
@@ -113,14 +125,23 @@ footer .fact {
 }
 
 .subscription {
-    &__form {
-        width: 100%;
-        
-        display: block;
-    }
 
     input {
         margin-bottom: 20px;
+        width: 450px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--bacground-gray-color);
+        padding-left: 16px;
+        outline: none;
+        color: var(--primary-white-color);
+
+        @include desktop {
+            width: 358px;
+            margin-bottom: 0;
+        }
     }
 
     p {
@@ -130,34 +151,25 @@ footer .fact {
             color: var(--primary-white-color);
             margin-bottom: 20px;
 }
+    button {
+        background-color: var(--accent-text-color);
+        color: var(--primary-white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        margin-left: 12px;
+}
 }
 
-.subscription input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: var(--bacground-gray-color);
-    padding-left: 16px;
-    outline: none;
-    color: var(--primary-white-color);
-}
+// .subscription__form {
+//     @include desktop {
+//         display: flex;
+//     }
+// }
 
-
-.subscription button {
-    background-color: var(--accent-text-color);
-    color: var(--primary-white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    margin-left: 12px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 input::placeholder {
     line-height: 1.25;
@@ -170,4 +182,11 @@ input::placeholder {
     height: 24px;
     margin-left: 10px;
     fill: var(--primary-white-color);
+}
+
+.footer-container__wrap {
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+    }
 }

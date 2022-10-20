@@ -32,7 +32,7 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
-    width: 360px;
+    max-width: 360px;
     font-size: 26px;
     line-height: 1.6;
     color: var(--primary-white-color);
@@ -43,7 +43,7 @@
     @include desktop {
         font-size: 44px;
         line-height: 1.36   ;
-        width: 696px
+        max-width: 696px
     }
 }
 .hero__button {

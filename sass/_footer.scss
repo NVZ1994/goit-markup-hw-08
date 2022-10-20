@@ -128,7 +128,7 @@ footer .fact {
 
     input {
         margin-bottom: 20px;
-        max-width: 100%;
+        min-width: 100%;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -138,9 +138,14 @@ footer .fact {
         outline: none;
         color: var(--primary-white-color);
 
+        @include tablet {
+            max-width: 450px;
+        }
+
         @include desktop {
             width: 358px;
             margin-bottom: 0;
+            min-width: 0;
         }
     }
 
@@ -170,9 +175,11 @@ footer .fact {
 }
 
 .subscription__form {
+    max-width: 100%;
 
     @include tablet {
         display: inline-block;
+        min-width: 450px;
     }
 
     @include desktop {

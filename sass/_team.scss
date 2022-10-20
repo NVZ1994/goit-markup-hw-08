@@ -1,9 +1,9 @@
 .person {
     margin-bottom: 30px;
-    width: 450px;
+    max-width: 100%;
 
     @include tablet {
-        width: 354px;
+        max-width: 354px;
     }
 
     @include desktop {

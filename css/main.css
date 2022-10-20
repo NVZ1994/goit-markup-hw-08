@@ -457,12 +457,12 @@ ul {
 }
 
 .features__list-item {
-  width: 450px;
+  max-width: 100%;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__list-item {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -533,11 +533,11 @@ ul {
 
 .person {
   margin-bottom: 30px;
-  width: 450px;
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .person {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -742,12 +742,10 @@ footer {
 .footer-container-item {
   margin-bottom: 60px;
 }
-.footer-container-item:last-child {
-  margin-bottom: 0;
-}
 @media screen and (min-width: 1200px) {
   .footer-container-item:last-child {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -908,7 +906,26 @@ footer .fact {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscription button {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscription__form {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 input::-webkit-input-placeholder {

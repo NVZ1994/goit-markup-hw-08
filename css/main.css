@@ -1131,7 +1131,7 @@ input::placeholder {
   background-color: var(--primary-white-color);
   border-radius: 4px;
   position: absolute;
-  top: 50%;
+  top: 400px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1144,9 +1144,15 @@ input::placeholder {
   padding: 40px;
   width: 450px;
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 510px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    top: 50%;
   }
 }
 

@@ -29,6 +29,10 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include desktop {
+        width: 528px;
+    }
 }
 
 .modal-close {
@@ -141,7 +145,12 @@ label a {
         font-size: 12px;
         line-height: 1.16;
         padding-left: 8px;
-    }
+
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+}
 }
 
 .accept+label {
@@ -164,6 +173,10 @@ label a {
     bottom: 50%;
     transform: translate(-50%, -50%);
     left: 8px;
+
+    @include desktop {
+    left: 15px;
+    }
 }
 
 .accept input:checked+label+.checkbox {

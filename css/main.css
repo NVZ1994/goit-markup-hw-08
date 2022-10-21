@@ -1128,8 +1128,7 @@ input::placeholder {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   position: absolute;
@@ -1273,6 +1272,11 @@ label a {
           justify-content: center;
   position: relative;
 }
+.accept label {
+  font-size: 12px;
+  line-height: 1.16;
+  padding-left: 8px;
+}
 
 .accept + label {
   display: -webkit-box;
@@ -1305,7 +1309,7 @@ label a {
   bottom: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 15px;
+  left: 8px;
 }
 
 .accept input:checked + label + .checkbox {

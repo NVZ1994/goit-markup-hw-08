@@ -34,7 +34,7 @@
         width: 90%;
     }
 
-    @include tablet  {
+    @include tablet {
         top: 510px;
     }
 
@@ -156,7 +156,7 @@ label a {
 
         @media screen and (max-width: 480px) {
             font-size: 11px;
-            padding-left: 20px
+            padding-left: 30px
         }
 
         @include desktop {
@@ -164,7 +164,7 @@ label a {
             line-height: 1.7;
             padding-left: 8px;
         }
-}
+    }
 }
 
 .accept+label {
@@ -189,11 +189,11 @@ label a {
     left: 8px;
 
     @include desktop {
-    left: 15px;
+        left: 15px;
     }
 }
 
-.accept input:checked+label+.checkbox {
+.accept input:checked+.checkbox {
     background-color: var(--accent-text-color);
     border: none;
 }
@@ -207,6 +207,7 @@ label a {
 .btn-wrap label {
     margin-bottom: 30px;
 }
+
 .submit-btn {
     text-align: center;
     padding: 10px 52px;
@@ -220,6 +221,7 @@ label a {
 .submit-btn:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 .form-icon {
     width: 18px;
     height: 18px;
@@ -229,6 +231,7 @@ label a {
     left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .input-wrap {
     position: relative;
 }

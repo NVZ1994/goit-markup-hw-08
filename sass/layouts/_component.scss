@@ -30,12 +30,15 @@
     padding: 40px;
     max-width: 450px;
 
+    @media screen and (max-width: 480px) {
+        min-width: 90%;
+    }
+
     @include tablet  {
         top: 510px;
     }
 
     @include desktop {
-        width: 528px;
         top: 50%;
     }
 }
@@ -151,9 +154,14 @@ label a {
         line-height: 1.16;
         padding-left: 8px;
 
+        @media screen and (max-width: 480px) {
+            font-size: 11px;
+        }
+
         @include desktop {
             font-size: 14px;
             line-height: 1.7;
+            padding-left: 8px;
         }
 }
 }

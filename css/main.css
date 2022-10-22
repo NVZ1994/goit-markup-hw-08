@@ -1170,6 +1170,11 @@ input::placeholder {
   padding: 40px;
   max-width: 450px;
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    min-width: 90%;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     top: 510px;
@@ -1177,7 +1182,6 @@ input::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
     top: 50%;
   }
 }
@@ -1314,10 +1318,16 @@ label a {
   line-height: 1.16;
   padding-left: 8px;
 }
+@media screen and (max-width: 480px) {
+  .accept label {
+    font-size: 11px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .accept label {
     font-size: 14px;
     line-height: 1.7;
+    padding-left: 8px;
   }
 }
 

@@ -7,6 +7,12 @@
     color: var(--title-text-color);
     display: block;
     margin-bottom: 30px;
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 }
 
 .features__list {
@@ -21,6 +27,7 @@
 
     @include desktop {
         display: flex;
+        flex-wrap: nowrap;
     }
 }
 
@@ -31,6 +38,14 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+
+    @include tablet {
+        text-align: inherit;
+    }
+    @include desktop {
+        text-align: inherit;
+    }
 }
 
 .feature-icon {

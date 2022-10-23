@@ -70,10 +70,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-
-    @media screen and (max-width:480px) {
-        height: 90%;
-    }
 }
 
 .menu-link {
@@ -85,7 +81,6 @@
 
 .menu-social {
     display: flex;
-    justify-content: space-between;
 
     @media screen and (max-width:480px) {
         flex-wrap: wrap;
@@ -99,9 +94,14 @@
     }
 }
 
-.menu-link__item:not(:first-child) {
+.menu-link__item {
+
+    padding-right: 10px;
+
+    &:not(:first-child) {
     border-left: 1px solid rgba(33, 33, 33, .2);
     padding-left: 10px;
+}
 }
 
 

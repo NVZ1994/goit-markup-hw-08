@@ -49,6 +49,11 @@ body {
 .section {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 
 .container {
   max-width: 480px;
@@ -57,12 +62,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1199px;
   }
 }
 
@@ -230,11 +235,6 @@ ul {
           justify-content: space-between;
   height: 100%;
 }
-@media screen and (max-width: 480px) {
-  .mobile-menu {
-    height: 90%;
-  }
-}
 
 .menu-link {
   font-weight: 500;
@@ -247,9 +247,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 @media screen and (max-width: 480px) {
   .menu-social {
@@ -264,6 +261,9 @@ ul {
   color: var(--accent-text-color);
 }
 
+.menu-link__item {
+  padding-right: 10px;
+}
 .menu-link__item:not(:first-child) {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 10px;
@@ -402,6 +402,9 @@ ul {
 @media screen and (min-width: 768px) {
   .authentification {
     display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -409,6 +412,8 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -433,6 +438,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .authentification__email {
     padding: 32px 0;
+    margin: 0;
   }
 }
 
@@ -570,6 +576,11 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
+@media screen and (min-width: 768px) {
+  .hero__container-title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__container-title {
     font-size: 44px;
@@ -591,6 +602,13 @@ ul {
   color: var(--title-text-color);
   display: block;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .features__list {
@@ -614,6 +632,8 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -624,6 +644,17 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__list-title {
+    text-align: inherit;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list-title {
+    text-align: inherit;
+  }
 }
 
 .feature-icon {
@@ -945,6 +976,11 @@ footer {
 
 .footer-container-item {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container-item {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-container-item:last-child {

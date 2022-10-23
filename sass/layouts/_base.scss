@@ -23,6 +23,9 @@ body {
 
 .section {
     padding: 60px 0;
+    @include desktop {
+        padding: 94px 0;
+    }
 }
 
 .container {
@@ -31,10 +34,10 @@ body {
     padding: 0 15px;
 
     @include tablet {
-        max-width: 768px;
+        max-width: 767px;
     }
     @include desktop {
-        max-width: 1200px;
+        max-width: 1199px;
     }
 }
 

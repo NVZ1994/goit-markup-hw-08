@@ -251,11 +251,22 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .menu-social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .menu-social a {
   text-transform: capitalize;
   font-size: 18px;
   line-height: 1.22;
   color: var(--accent-text-color);
+}
+
+.menu-link__item:not(:first-child) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
 }
 
 .navigation-menu li {

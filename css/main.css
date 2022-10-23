@@ -695,6 +695,9 @@ ul {
   max-width: 100%;
   margin-bottom: 30px;
 }
+.features__list-item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .features__list-item {
     max-width: 354px;

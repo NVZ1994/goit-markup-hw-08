@@ -4,6 +4,19 @@
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
+
+    @include desktop {
+            flex-wrap: nowrap;
+        }
+}
+
+.clients-list {
+    @include tablet{
+        width: calc((100% - 60px)/3);
+    }
+    @include desktop {
+        width: 170px;
+    }
 }
 
 .clents-link {
